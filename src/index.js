@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Square from './App';
+import React, { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import './styles.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Board from './App';
+
+
+const root = createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Square />
-  </React.StrictMode>
+  <StrictMode>
+    <Board />
+  </StrictMode>
 );
 
